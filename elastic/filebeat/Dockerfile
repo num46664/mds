@@ -1,7 +1,5 @@
-ARG ES_VERSION
-
 # # get official filebeat image
-FROM docker.elastic.co/beats/filebeat:${ES_VERSION}
+FROM docker.elastic.co/beats/filebeat
 
 # Logstash host and port configuration (required)
 ARG ES_LOGSTASH_HOST

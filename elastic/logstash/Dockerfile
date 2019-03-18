@@ -1,6 +1,4 @@
-ARG ES_VERSION
-
-FROM docker.elastic.co/logstash/logstash:${ES_VERSION}
+FROM docker.elastic.co/logstash/logstash
 RUN rm -f /usr/share/logstash/pipeline/logstash.conf
 
 # copy dictionaries

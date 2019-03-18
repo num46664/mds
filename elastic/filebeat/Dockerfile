@@ -19,5 +19,3 @@ RUN chgrp -R 0 /usr/share/filebeat/filebeat.yml \
     && chmod -R go-w /usr/share/filebeat/filebeat.yml \
     && chgrp -R 0 /usr/share/filebeat/modules.d/nginx.yml \
     && chmod -R go-w /usr/share/filebeat/modules.d/nginx.yml
-
-USER filebeat
